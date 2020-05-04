@@ -1,0 +1,11 @@
+@use './colors.scss';
+
+$theme: colors.$default-theme !default;
+
+$background: colors.$white;
+$text-color: colors.$black;
+
+@if $theme == "dark" {
+  $background: colors.$black;
+  $text-color: colors.$white;
+}
